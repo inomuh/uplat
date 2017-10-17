@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+  <name>evarobotmove_simulator</name>
+  <version>0.0.1</version>
+  <description>
+    The evarobot_simulator meta package provides all the basic packages for Gazebo model.
+  </description>
+  <author> </author>
+  <maintainer email="didem.ozupek@inovasyonmuhendislik.com"></maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>evarobotmove_gazebo</run_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+</package>
