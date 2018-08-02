@@ -11,7 +11,7 @@
 			<visual>
 				<origin xyz="0.065 -0.11 -0.15" rpy="0 0 0" />  
 				<geometry>
-					<mesh filename="model://evarobotmodel_description/meshes/base.dae"/> 
+					<mesh filename="package://evarobotmodel_description/meshes/base.dae"/> 
 				</geometry>
 				<material name="Gazebo/Black" />
 			</visual>
@@ -37,7 +37,7 @@
 			<visual>
 				<origin xyz="0.065 -0.11 -0.15" rpy="0 0 0" /> 
 				<geometry>
-					<mesh filename="model://evarobotmodel_description/meshes/base_orange.dae"/>  
+					<mesh filename="package://evarobotmodel_description/meshes/base_orange.dae"/>  
 				</geometry>
 				<material name="Orange" />
 			</visual>
@@ -70,7 +70,7 @@
 			<visual>
 				<origin rpy="0 0 1.57079632679" xyz="0 0 0"/> 
 				<geometry>
-					 <mesh filename="model://evarobotmodel_description/meshes/rim.dae" scale="1 1 1"/> 
+					 <mesh filename="package://evarobotmodel_description/meshes/rim.dae" scale="1 1 1"/> 
 				</geometry>
 				<material name="Grey"/>
 			</visual>
@@ -108,7 +108,7 @@
 			<visual>
 				<origin rpy="0 0 1.57079632679" xyz="0 0 0"/>
 				<geometry>
-					<mesh filename="model://evarobotmodel_description/meshes/tire.dae"/> 
+					<mesh filename="package://evarobotmodel_description/meshes/tire.dae"/> 
 				</geometry>
 			</visual>
 			<inertial>
@@ -140,7 +140,7 @@
 			<visual>
 				<origin rpy="0 0 1.57079632679" xyz="0 0 0"/> 
 				<geometry>
-					 <mesh filename="model://evarobotmodel_description/meshes/rim.dae" scale="1 1 1"/> 
+					 <mesh filename="package://evarobotmodel_description/meshes/rim.dae" scale="1 1 1"/> 
 				</geometry>
 				<material name="Grey"/>
 			</visual>
@@ -178,7 +178,7 @@
 			<visual>
 				<origin rpy="0 0 1.57079632679" xyz="0 0 0"/>
 				<geometry>
-					<mesh filename="model://evarobotmodel_description/meshes/tire.dae" scale="1 1 1"/> 
+					<mesh filename="package://evarobotmodel_description/meshes/tire.dae" scale="1 1 1"/> 
 				</geometry>
 				<material name="Black"/>
 			</visual>
@@ -194,7 +194,7 @@
 		<gazebo reference="right_wheeltire_link">
 			<material>Gazebo/Black</material>
 		</gazebo>	
-		<joint name="right_wheeltire_joint" type="continuous">
+		<joint name="right_wheeltire_joint" type="fixed">
 			<axis xyz="0 1 0"/>
 			<parent link="right_wheel_link"/>
 			<child link="right_wheeltire_link"/>
@@ -211,7 +211,7 @@
 			<visual>
 				<origin rpy="3.1415926535897931 0 0" xyz="-0.005 -0.01075 0.00675"/>
 				<geometry>
-					<mesh filename="model://evarobotmodel_description/meshes/caster_base.dae" scale="1 1 1"/> 
+					<mesh filename="package://evarobotmodel_description/meshes/caster_base.dae" scale="1 1 1"/> 
 				</geometry>
 				<material name="Grey"/>
 			</visual>
@@ -248,7 +248,7 @@
 			<visual>
 				<origin rpy="3.1415926535897931 0 1.57079632679" xyz="0 0 0.01"/>
 				<geometry>
-					<mesh filename="model://evarobotmodel_description/meshes/caster_rot.dae"/> 
+					<mesh filename="package://evarobotmodel_description/meshes/caster_rot.dae"/> 
 				</geometry>
 			</visual>
 			<inertial>
@@ -321,7 +321,7 @@
 			<visual>
 				<origin rpy="3.1415926535897931 0 0" xyz="-0.005 -0.01075 0.00675"/>
 				<geometry>
-					<mesh filename="model://evarobotmodel_description/meshes/caster_base.dae" scale="1 1 1"/> 
+					<mesh filename="package://evarobotmodel_description/meshes/caster_base.dae" scale="1 1 1"/> 
 				</geometry>
 				<material name="Grey"/>
 			</visual>
@@ -358,7 +358,7 @@
 			<visual>
 				<origin rpy="3.1415926535897931 0 1.57079632679" xyz="0 0 0.01"/>
 				<geometry>
-					<mesh filename="model://evarobotmodel_description/meshes/caster_rot.dae" scale="1 1 1"/> 
+					<mesh filename="package://evarobotmodel_description/meshes/caster_rot.dae" scale="1 1 1"/> 
 				</geometry>
 				<material name="Grey"/>
 			</visual>
@@ -427,7 +427,7 @@
 		  <visual>
 			<origin xyz="0.0 0.0 0.004" rpy="0 0 0"/>
 			<geometry>
-			  <mesh filename="model://evarobotmodel_description/meshes/xtion_pro_camera.dae"/>
+			  <mesh filename="package://evarobotmodel_description/meshes/kinect.dae" scale="0.9 0.9 0.9"/>
 			</geometry>
 		  </visual>
 		  <collision>
@@ -483,16 +483,16 @@
 		  <child link="mount_asus_xtion_pro_link"/>
 		</joint>  
 		<link name="mount_asus_xtion_pro_link">
-		  <visual>
+<!--		  <visual>
 			<origin xyz="0 0 0" rpy="0 0 0"/>
 			<geometry>
-			  <mesh filename="model://evarobotmodel_description/meshes/asus_base.dae"/>
+			  <mesh filename="package://evarobotmodel_description/meshes/asus_base.dae"/>
 			</geometry>
 			<material name="Black"/>
 		  </visual>  
 		  <collision>
 			<origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
-			<geometry>
+		  <geometry>
 			<box size="0.2760 0.0330 0.0120"/>
 		  </geometry>
 		  </collision>
@@ -560,7 +560,7 @@
 			<visual>
 				<origin xyz="-0.055 -0.11 -0.05" rpy="-1.57079632679 3.1415926535897931 0"/>
 				<geometry>
-					<mesh filename="model://evarobotmodel_description/meshes/rplidar.dae" scale="0.001 0.001 0.001" />
+					<mesh filename="package://evarobotmodel_description/meshes/rplidar.dae" scale="0.001 0.001 0.001" />
 				</geometry>
 				<material name="Black" />
 			</visual>
@@ -1348,7 +1348,7 @@
 				<odometryFrame>odom_combined</odometryFrame>
 				<robotNamespace>/</robotNamespace>
 				<legacyMode>true</legacyMode>
-				<publishTf>1</publishTf>
+				<publishTf>true</publishTf>
 			</plugin>
 		  </gazebo>		-->
 <gazebo>
@@ -1358,4 +1358,12 @@
       <interface:audio name="gazebo_ros_controller_manager_dummy_iface" />
     </controller:gazebo_ros_controller_manager>
   </gazebo>	          
+	<gazebo>
+        <plugin name="joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
+          <robotNamespace>/</robotNamespace>
+          	<jointName>left_wheel_joint,right_wheel_joint,front_caster_base_rotate_joint,rear_caster_base_rotate_joint,front_caster_rotate_wheel_joint,rear_caster_rotate_wheel_joint</jointName>
+          <updateRate>10.0</updateRate>
+          <alwaysOn>true</alwaysOn>
+        </plugin>
+    </gazebo>
 </robot>
