@@ -489,7 +489,7 @@
 			  <mesh filename="package://evarobotmodel_description/meshes/asus_base.dae"/>
 			</geometry>
 			<material name="Black"/>
-		  </visual>  
+		  </visual>  -->
 		  <collision>
 			<origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
 		  <geometry>
